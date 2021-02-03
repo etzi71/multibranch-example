@@ -12,7 +12,7 @@ pipeline {
         stage('My Example') {
             when {
                 beforeInput true
-                branch 'ana_test'
+                branch 'ana_test1'
             }
             steps {
                 echo 'Hello Anna'
