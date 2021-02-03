@@ -9,6 +9,14 @@ pipeline {
             steps {
                 echo 'Hello World'
             }
+        stage('My Example') {
+            when {
+                beforeInput true
+                branch 'ana_test'
+            }
+            steps {
+                echo 'Hello Anna'
+            }
         }
         stage('Example Deploy') {
             when {
